@@ -1,7 +1,8 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="avit"
 DEFAULT_USER="jamie"
-plugins=(macos ruby brew docker docker-compose github git-hubflow gulp node npm vscode per-directory-history iterm2)
+plugins=(macos brew docker docker-compose node vscode iterm2 
+zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -34,3 +35,4 @@ export GOROOT=/usr/local/opt/go/libexec
 
 # Private keys and tokens
 source ~/.zshrc.private
+eval "$(starship init zsh)"
